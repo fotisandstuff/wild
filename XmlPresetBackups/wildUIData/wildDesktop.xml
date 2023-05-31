@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptFloatingTile" id="FloatingTile1" x="140.0" y="290.0"
+             ContentType="AHDSRGraph" bgColour="0" itemColour="450046763"
+             itemColour2="3841982463" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+             width="310.0" height="140.0"/>
+  <Component type="ScriptSlider" id="Knob1" x="20.0" y="440.0" processorId="AHDSR Envelope1"
+             parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
+             suffix=" ms" middlePosition="1000.0" text="Attack" defaultValue="20.0"/>
+  <Component type="ScriptSlider" id="Knob2" x="160.0" y="440.0" processorId="AHDSR Envelope1"
+             parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
+             suffix=" ms" middlePosition="1000.0" text="Decay" defaultValue="50.0"/>
+  <Component type="ScriptSlider" id="Knob3" x="310.0" y="440.0" processorId="AHDSR Envelope1"
+             parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+             suffix=" dB" middlePosition="-18.0" text="Sustain" defaultValue="-3.0"/>
+  <Component type="ScriptSlider" id="Knob4" x="460.0" y="440.0" processorId="AHDSR Envelope1"
+             parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
+             suffix=" ms" middlePosition="1000.0" text="Release" defaultValue="500.0"/>
+  <Component type="ScriptSlider" id="Knob5" x="460.0" y="330.0" middlePosition="0.5"
+             suffix="%" text="Mix" processorId="Waveform Generator1" parameterId="Mix"
+             mode="NormalizedPercentage" defaultValue="0.5"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile2" x="0.0" y="490.0"
+             ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
+             itemColour2="4294967295" textColour="0" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: false,&#10;  &quot;LowKey&quot;: 24,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"
+             height="72.0" width="600.0"/>
+  <Component type="ScriptSlider" id="Knob6" x="460.0" y="380.0" middlePosition="64.0"
+             text="LFO" defaultValue="0.5" max="127.0" stepSize="1.0" processorId="Midi Controller1"
+             parameterId="DefaultValue"/>
+  <Component type="ScriptButton" id="Button1" x="460.0" y="300.0" text="LFO"
+             processorId="LFO Modulator1" parameterId="Enabled"/>
+  <Component type="ScriptSlider" id="Effect" x="0.0" y="390.0" middlePosition="-18.0"
+             stepSize="0.1000000014901161" min="-100.0" max="0.0" suffix=" dB"
+             mode="Decibel" processorId="Send Effect1" parameterId="Gain"
+             defaultValue="-100.0" text="WILDER!"/>
+  <Component type="ScriptImage" id="Image1" x="0.0" y="0.0" fileName="{PROJECT_FOLDER}wild.jpg"
+             width="600.0" height="280.0"/>
+  <Component type="ScriptSlider" id="Gain" x="0.0" y="290.0" stepSize="0.009999999776482582"
+             processorId="wild" parameterId="Gain" defaultValue="1.0"/>
+  <Component type="ScriptSlider" id="Voices" x="0.0" y="340.0" processorId="Waveform Generator1"
+             parameterId="VoiceLimit" max="256.0" min="1.0" defaultValue="1.0"/>
+</ContentProperties>
