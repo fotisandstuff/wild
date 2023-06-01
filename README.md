@@ -3,5 +3,7 @@
 
 # wild
 An anti-chiptune synth!
+# To do
+Fix the Wilder knob
 # Buy me a coffee!
 https://ko-fi.com/crispysamples
