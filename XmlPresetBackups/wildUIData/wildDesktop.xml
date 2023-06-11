@@ -29,7 +29,7 @@
              parameterId="DefaultValue"/>
   <Component type="ScriptButton" id="Button1" x="460.0" y="300.0" text="LFO"
              processorId="LFO Modulator1" parameterId="Enabled"/>
-  <Component type="ScriptSlider" id="Effect" x="0.0" y="390.0" middlePosition="-18.0"
+  <Component type="ScriptSlider" id="Wilder" x="0.0" y="390.0" middlePosition="-18.0"
              stepSize="0.1000000014901161" min="-100.0" max="0.0" suffix=" dB"
              mode="Decibel" processorId="Send Effect1" parameterId="Gain"
              defaultValue="-100.0" text="WILDER!"/>

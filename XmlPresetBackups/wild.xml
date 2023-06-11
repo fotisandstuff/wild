@@ -16,7 +16,7 @@
             <Control type="ScriptSlider" id="Knob5" value="0.5"/>
             <Control type="ScriptSlider" id="Knob6" value="1.0"/>
             <Control type="ScriptButton" id="Button1" value="1.0"/>
-            <Control type="ScriptSlider" id="Effect" value="-100.0"/>
+            <Control type="ScriptSlider" id="Wilder" value="-100.0"/>
             <Control type="ScriptSlider" id="Gain" value="1.0"/>
             <Control type="ScriptSlider" id="Voices" value="1.0"/>
           </Content>
@@ -158,23 +158,10 @@
                     <Network ID="script_fx1" Version="0.0.0">
                       <Node FactoryPath="container.chain" ID="script_fx1" Bypassed="0">
                         <Nodes>
-                          <Node ID="convolution" FactoryPath="filters.convolution" Bypassed="0">
-                            <ComplexData>
-                              <AudioFiles>
-                                <AudioFile Index="-1" EmbeddedData="D:\Samples\IR\Convolution IR\0-Mine\Wider IR.wav"
-                                           MinValue="0" MaxValue="22203"/>
-                              </AudioFiles>
-                            </ComplexData>
+                          <Node ID="haas" FactoryPath="fx.haas" Bypassed="0">
                             <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Gate" Value="1.0"/>
-                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="1.0" ID="Predelay"
-                                         Value="0.0"/>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="Damping" Value="0.0"/>
-                              <Parameter MinValue="20.0" MaxValue="20000.0" StepSize="1.0" SkewFactor="0.2299045622348785"
-                                         ID="HiCut" Value="20000.0"/>
-                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Multithread"
-                                         Value="0.0"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" StepSize="0.1000000014901161"
+                                         ID="Position" Value="1.0"/>
                             </Parameters>
                           </Node>
                           <Node ID="mid_side1" FactoryPath="container.chain" Bypassed="0">
